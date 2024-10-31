@@ -24,7 +24,8 @@
     <h1>Stew Count Down</h1>
     <div id="countdown"></div>
     <div id="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/X7RotIysnpo?autoplay=1&si=XztjzFLqWxesVDnh" 
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/X7RotIysnpo?autoplay=1&si=XztjzFLqWxesVDnh" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                 gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
@@ -37,7 +38,7 @@
 
             // If today is after November 1st, set target to next year's November
             if (now >= targetDate) {
-                targetDate = new Date(currentYear + 1, 10, 15);
+                targetDate = new Date(currentYear + 1, 10, 1);
             }
 
             const timeDifference = targetDate - now;
